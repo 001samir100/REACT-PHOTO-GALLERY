@@ -29,7 +29,6 @@ const SearchBox = () => {
 			icon={FaSearch}
 			placeholder="Search Image"
 			className="w-[90%] left tablet:w-[25%] m-2"
-			// style={{ border: "2px red solid" }}
 			ref={searchKey}
 			onKeyUp={handleKeyPressed}
 		/>
