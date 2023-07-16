@@ -7,7 +7,7 @@ import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import SearchBox from "./SearchBox";
 
-const NavbarHeader = () => {
+const NavbarHeader = ({ fetchData }) => {
 	const Links = [
 		{ name: "Home", link: "/", icon: GoHomeFill },
 		{ name: "Nature", link: "/", icon: PiPlantFill },
@@ -17,9 +17,9 @@ const NavbarHeader = () => {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<nav className="sticky top-0 right-0 left-0 tablet:flex justify-between shadow px-4 tablet:px-[1rem] laptop:px-[2rem] py-2 bg-smoke">
+		<nav className="sticky bg-white top-0 right-0 left-0 tablet:flex justify-between px-4 tablet:px-[1rem] laptop:px-[2rem] py-2 ">
 			<div className="w-auto font-bold text-1xl cursor-pointer flex items-center ">
-				<Navbar.Brand className="tablet:static w-auto ">
+				<Navbar.Brand className="tablet:static w-auto text-2xl text-black">
 					<img src="/vite.svg"></img> &nbsp;
 					<h1>Gallery App</h1>
 				</Navbar.Brand>

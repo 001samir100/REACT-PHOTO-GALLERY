@@ -6,7 +6,7 @@ export default {
 	],
 	theme: {
 		extend: {
-			colors: { black: "2f2f2f", smoke: "#f6f6f6", light_orange: "#ffcb74" },
+			colors: { black: "#2f2f2f", smoke: "#f6f6f6", light_orange: "#ffcb74" },
 		},
 		screens: {
 			mobile: "480px",
