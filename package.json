@@ -14,9 +14,12 @@
     "flowbite": "^1.7.0",
     "flowbite-react": "^0.4.11",
     "pexels": "^1.4.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1"
+    "react-icons": "^4.10.1",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-responsive-masonry": "^2.1.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
