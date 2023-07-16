@@ -1,8 +1,11 @@
 import { TextInput } from "flowbite-react";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
+import { MyContext } from "../../hooks/context/MyContext";
 const SearchBox = () => {
 	const searchKey = useRef();
+
+	const fetchImages = useContext(MyContext);
 
 	const checkIsEmpty = () => {
 		if (searchKey.current.value === "" || searchKey.current.value === null) {
@@ -14,11 +17,11 @@ const SearchBox = () => {
 
 	const handleKeyPressed = (e) => {
 		if (e.key === "Enter") {
-			console.log(`You pressed enter! Ref value is:` + searchKey.current.value);
 			if (checkIsEmpty()) {
 				console.log("yes is empty");
 			} else {
-				console.log("NOoooo is empty");
+				//perform task here
+				fetchImages(searchKey.current.value);
 			}
 		}
 	};

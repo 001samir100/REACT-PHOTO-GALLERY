@@ -1,5 +1,9 @@
 import ImageCard from "./ImageCard";
+<<<<<<< HEAD
 import PropTypes from "prop-types";
+=======
+import PropTypes from "prop-types"; // ES6
+>>>>>>> Responsive_Body_Layout
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const ResponsiveBody = ({ data }) => {
